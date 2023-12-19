@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Rental Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Car Rental</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#vendor">Vendor Dashboard</a></li>
+      <li><a href="#client">Client Dashboard</a></li>
+      <li><a href="#admin">Admin Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <section id="vendor">
+    <h2>Vendor Dashboard</h2>
+    <!-- Vendor account creation form -->
+    <form>
+      <label for="vendorName">Vendor Name:</label>
+      <input type="text" id="vendorName" name="vendorName" required>
+
+      <label for="areaOfService">Area of Service:</label>
+      <input type="text" id="areaOfService" name="areaOfService" required>
+
+      <label for="carName">Car Name:</label>
+      <input type="text" id="carName" name="carName" required>
+
+      <button type="submit">Add Car</button>
+    </form>
+  </section>
+
+  <section id="client">
+    <h2>Client Dashboard</h2>
+    <!-- Client location selection -->
+    <label for="initialLocation">Select Initial Location:</label>
+    <input type="text" id="initialLocation" name="initialLocation" required>
+
+    <!-- Nearby cars display -->
+    <div id="nearbyCars">
+      <!-- Display nearby cars dynamically using JavaScript -->
+    </div>
+  </section>
+
+  <section id="admin">
+    <h2>Admin Dashboard</h2>
+    <!-- Review vendor and client interaction -->
+    <div id="vendorInteraction">
+      <!-- Display vendor interaction dynamically using JavaScript -->
+    </div>
+
+    <div id="clientInteraction">
+      <!-- Display client interaction dynamically using JavaScript -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Car Rental. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
